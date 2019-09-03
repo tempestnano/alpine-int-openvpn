@@ -1,5 +1,5 @@
-FROM binhex/arch-base:latest
-MAINTAINER binhex
+FROM jzegers/arch-arm-base:latest
+MAINTAINER jzegers
 
 # additional files
 ##################
