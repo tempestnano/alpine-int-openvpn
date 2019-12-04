@@ -51,6 +51,6 @@ else
     MANIFEST_TOOL_VERSION=$(curl -s https://api.github.com/repos/estesp/manifest-tool/releases/latest | grep 'tag_name' | cut -d\" -f4)
     curl -L https://github.com/estesp/manifest-tool/releases/download/$MANIFEST_TOOL_VERSION/manifest-tool-$IMAGE_OS-$HOST_ARCH_ALIAS -o manifest-tool
     chmod +x manifest-tool
-    ./manifest-tool push from-args --platforms ${PLATFORMS_ARCH} --template ${IMAGE_NAME} --target ${IMAGE_NAME}
-    
+    #./manifest-tool push from-args --platforms ${PLATFORMS_ARCH} --template ${IMAGE_NAME} --target ${IMAGE_NAME}
+    ./manifest-tool push from-spec manifest.yaml
 fi
