@@ -24,3 +24,5 @@ ADD run/nobody/*.sh /home/nobody/
 
 # expose port for privoxy
 EXPOSE 8118
+
+ENTRYPOINT /entrypoint.sh
