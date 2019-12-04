@@ -1,34 +1,20 @@
-**Application**
+# arch-arm-openvpn
 
-[OpenVPN](https://openvpn.net/)  
-[Privoxy](http://www.privoxy.org/)
+Docker for [Arch Linux](https://archlinuxarm.org/) with [OpenVPN](https://openvpn.net/) and [Privoxy](https://www.privoxy.org/)
 
-**Description**
+Made for ARMv8-based devices, tested on the Raspberry Pi
 
-OpenVPN is an open-source software application that implements virtual private network (VPN) techniques for creating secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities. It uses a custom security protocol that utilizes SSL/TLS for key exchange. Privoxy is a non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering Web pages and removing advertisements.
+- RPi 2 Model B v1.2
+- RPi 3 Model B
+- RPi 3 Model B+
+- RPi 4 Model B
 
-**Build notes**
+[Docker Hub](https://hub.docker.com/r/jzegers/arch-arm-openvpn)
 
-This is an intermediate Docker image which is used as a base image for other Docker images which require the OpenVPN client.
+## Notes
 
-**Usage**
+Based on the work from [binhex](https://github.com/binhex), see the original repository, made for x86-64-based devices [here](https://github.com/binhex/arch-int-openvpn)
 
-N/A, intermediate image used as a base for DelugeVPN and SABnzbdVPN.
+## License
 
-**Access application**
-
-N/A
-
-**Example**
-
-N/A, intermediate image used as a base for DelugeVPN and SABnzbdVPN.
-
-**Notes**
-
-N/A
-___
-If you appreciate my work, then please consider buying me a beer  :D
-
-[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
-
-[Documentation](https://github.com/binhex/documentation) | [Support forum](http://lime-technology.com/forum/index.php?topic=45811.0)
+This application is available under the [GNU General Public License v3.0](https://github.com/Joery/arch-arm-openvpn/blob/master/LICENSE)
